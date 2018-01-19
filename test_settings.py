@@ -53,7 +53,12 @@ DATABASES = {
     }
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.locmem.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'testemail@gmail.com'
+EMAIL_HOST_PASSWORD = 'testpass'
+EMAIL_PORT = 587
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -72,3 +77,4 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 STATIC_URL = '/static/'
+
