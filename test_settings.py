@@ -15,7 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login_email_confirmation',
+    'admin_email_sender',
 ]
 
 MIDDLEWARE = [
