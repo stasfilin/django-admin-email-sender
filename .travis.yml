@@ -1,0 +1,23 @@
+language: python
+
+python:
+  - "3.6"
+
+install:
+  - pip install tox
+  - pip install coveralls
+script:
+  - tox
+env:
+  - TOXENV=django110
+  - TOXENV=django111
+  - TOXENV=django_stable
+  - TOXENV=django_latest
+  - TOXENV=coverage
+
+branches:
+  only:
+    - master
+
+after_success:
+  - coveralls
