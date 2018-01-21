@@ -15,4 +15,4 @@ class TagsValidatorTest(TestCase):
         with self.assertRaises(Exception) as context:
             validate_tags('<p>Hey</p>')
 
-        self.assertTrue('I can find @body tag' in context.exception)
+        self.assertTrue('I cant find @body tag' in context.exception)
