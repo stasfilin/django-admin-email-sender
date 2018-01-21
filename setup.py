@@ -7,7 +7,7 @@ setup(
     package_data={'admin_email_sender': ['templates/*.*']},
     include_package_data=True,
     zip_safe=False,
-    version='0.1.0',
+    version='0.1.1g',
     description='Django Admin Email Sender',
     author='https://github.com/stasfilin',
     author_email='stasfilinmusic@gmail.com',
